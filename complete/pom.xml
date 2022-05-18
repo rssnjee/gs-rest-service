@@ -37,5 +37,11 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	<distributionManagement>
+	  <repository>
+	    <id>rssnjee-private-mvn-repo</id>
+	    <name>rssnjee-private-mvn-repo</name>
+	    <url>${env.CODEARTIFACT_REPO_URL}</url>
+	  </repository>
+	</distributionManagement>
 </project>
